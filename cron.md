@@ -55,6 +55,8 @@ night.
 **For more**
 `man crontab` for cron manual
 
+**Use && to specify More commands**
+`*/1 * * * * cd ~/Documents/localdev/bonjour && artisan email:notransaction`
 
 
 To save the changes to the crontab that you just made, hit ESC key, and
