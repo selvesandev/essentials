@@ -44,9 +44,11 @@ This opens vi editor for you. Create the cron command using the following syntax
 ```
 
 
-An example command would be **0 0 * * * /etc/cron.daily/script.sh**. This
+**Example 1**: command would be **0 0 * * * /etc/cron.daily/script.sh**. This
 would mean that the shell script will exactly execute at midnight every
 night.
+
+**Example 2**: add a new line in `crontab -e` which runs a laravel artisan command every 1 minute `*/1 * * * * php ~/Documents/localdev/bonjour/artisan email:notransaction`
 
 `0-55/5 * * * *` is the same as `*/5` means your command will run at every 5 minutes  
 `* * * * *` Every minute of every day of every week of every month, that command runs.
