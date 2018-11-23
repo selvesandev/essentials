@@ -12,8 +12,8 @@ https://numverify.com/
 1) Add .idea directory to the list of ignored files
 2) Remove it from repository
 ```
-git rm --cached mylogfile.log
-git rm --cached -r mydirectory
+git rm --cached mylogfile.log // if you want to remove files
+git rm -r --cached .idea
 
 ```
 3) Send the change to remote repo
